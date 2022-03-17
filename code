@@ -1,0 +1,30 @@
+import csv
+data = []
+with open('data.csv', 'r') as f:
+    next(f)
+    for row in csv.reader(f):
+        data.append(row)
+    print(data)
+
+print("\nThe total number of training instances are : ",len(data))
+num_attribute = len(a[0])-1
+hypothesis = ['0']*num_attribute
+print('\n initial instance :',hypothesis)
+for i in range(0, len(data)):
+    if a[i]num_attribute =="Yes"
+    
+h=['0','0','0','0','0','0']
+
+for row in data:
+    if row[-1]=='Yes':
+        i=0
+        
+        for column in row:
+            if column != 'Yes':
+                if column != h[i] and h[i] =='0':
+                    h[i] = column
+                elif column != h[i] and h[i] !='0':
+                    h[i] = '?'
+            i= i + 1
+print("Maximally specific Hypothesis:",h)
+                    
